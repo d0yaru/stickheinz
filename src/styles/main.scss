@@ -5,3 +5,1132 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+//-----------------------------------------------------------
+/////////////////////////////////////////////////////////////
+//-----------------------------------------------------------
+* {
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: #1c1c1c;
+	overflow-x: hidden; // Убирает горизонтальную прокрутку
+	position: relative;
+}
+//-----------------------------------------------------------
+/////////////////////////////////////////////////////////////
+//-----------------------------------------------------------
+.page {
+	//background-image: url(../img/tmp/Home_page1920.png);
+	//opacity: 0.8;
+	//--
+	//background-color: #1c1c1c;
+	width: 1920px;
+	height: 4170px;
+	// Блок по центру страницы -------------------------------
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0);
+	//--------------------------------------------------------
+	@media (max-width: 1919px) {
+		width: 1024px;
+		//background-image: url(../img/tmp/Home_page1024.png);
+	}
+	@media (max-width: 1023px) {
+		width: 768px;
+		//background-image: url(../img/tmp/Home_page768.png);
+	}
+	@media (max-width: 767px) {
+		width: 375px;
+		//background-image: url(../img/tmp/Home_page375.png);
+	}
+}
+//-----------------------------------------------------------
+/////////////////////////////////////////////////////////////
+//-----------------------------------------------------------
+// Title ----------------------------------------------------
+// <p class="title header__title">Title</p>
+.title {
+	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
+	font-style: normal; // начертание текста
+	font-weight: 500; // толщина букв текста
+	font-size: 24px; // размер текста
+	line-height: 0.9; // межстрочное расстояние
+	//letter-spacing: 5px; //интервал между символами
+	text-transform: uppercase; // буквы верхнего регистра
+	color: #ffffff; // цвет текста
+}
+//-----------------------------------------------------------
+// Text -----------------------------------------------------
+// <p class="text header__text">Text</p>
+.text {
+	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
+	font-style: normal; // начертание текста
+	font-weight: 400; // толщина букв текста
+	font-size: 16px; // размер текста
+	line-height: 1.4; // межстрочное расстояние
+	letter-spacing: 0.6px; //интервал между символами
+	color: #A9A9A9; // цвет текста
+	max-width: 470px; // ширина текстового поля
+}
+//-----------------------------------------------------------
+// Description ----------------------------------------------
+// <p class="description header__description">Description</p>
+.description {
+	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
+	font-style: normal; // начертание текста
+	font-weight: 400; // толщина букв текста
+	font-size: 12px; // размер текста
+	line-height: 0.9; // межстрочное расстояние
+	//letter-spacing: 5px; //интервал между символами
+	text-transform: uppercase; // буквы верхнего регистра
+	//color: #A9A9A9; // цвет текста
+	background: linear-gradient(180deg, #59F37B 0%, #08D8F4 100%);
+	-webkit-background-clip: text; //Обрезаем фон по тексту
+	-webkit-text-fill-color: transparent; //Прозрачный текст
+
+}
+//-----------------------------------------------------------
+// Link -----------------------------------------------------
+// <a class="link header__link" href="#">link</a>
+.link {
+	// text
+	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
+	font-style: normal; // начертание текста
+	font-weight: 500; // толщина букв текста
+	font-size: 14px; // размер текста
+	line-height: 0.9; // межстрочное расстояние
+	letter-spacing: 0.03em; //интервал между символами
+	text-transform: uppercase; // буквы верхнего регистра
+	color: rgba(169, 169, 169, 1); // цвет текста
+	// link
+	text-decoration: none; // убирает подчеркивание ссылок
+
+	&:hover {
+		background: linear-gradient(180deg, #59F37B 0%, #08D8F4 100%);
+		-webkit-background-clip: text; //Обрезаем фон по тексту
+		-webkit-text-fill-color: transparent; //Прозрачный текст
+	}
+
+	&-active {
+		background: linear-gradient(180deg, #59F37B 0%, #08D8F4 100%);
+		-webkit-background-clip: text; //Обрезаем фон по тексту
+		-webkit-text-fill-color: transparent; //Прозрачный текст
+	}
+}
+//-----------------------------------------------------------
+// Block ----------------------------------------------------
+// <div class="block header__block"></div>
+.block {
+	width: 100px; // ширина блока
+	height: 50px; // высота блока
+	//background-color: rgba(100, 100, 100, 1); // цвет фона и прозрачность блока
+}
+//-----------------------------------------------------------
+// Btn ------------------------------------------------------
+// <a class="btn header__btn" href="#">btn</a>
+.btn {
+	// text
+	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
+	font-style: normal; // начертание текста
+	font-weight: 500; // толщина букв текста
+	font-size: 16px; // размер текста
+	line-height: 0.9; // межстрочное расстояние
+	letter-spacing: 0.5px; //интервал между символами
+	text-transform: uppercase; // буквы верхнего регистра
+	color: #A9A9A9; // цвет текста
+	// link
+	text-decoration: none;
+	// btn
+	background-color: #1C1C1C; // цвет фона
+	padding: 27px 64px 26px 66px; // отступы от внутреннего содержания
+	border: 1px solid #999999; // ширина рамки вокруг и цвет
+	//border-radius: 15px; // закругленные края
+
+	&:hover {
+		background-color: #1C1C1C;
+		border: 1px solid transparent;
+		-webkit-border-image: -webkit-linear-gradient(rgba(89, 243, 123, 0.3) , rgba(8, 216, 244, 0.3));
+		border-image-slice: 1;
+	}
+
+	&-active {
+		background-color: #1C1C1C;
+		border: 1px solid transparent;
+		-webkit-border-image: -webkit-linear-gradient(rgba(89, 243, 123, 0.3) , rgba(8, 216, 244, 0.3));
+		border-image-slice: 1;
+	}
+
+}
+//-----------------------------------------------------------
+.test {
+	display: flex;
+	justify-content: space-between;
+	max-width: 700px;
+	margin: 50px auto;
+
+	&__block {
+		background-color: rgba(100, 100, 100, 1);
+	}
+}
+//-----------------------------------------------------------
+// SECTION HEADER ///////////////////////////////////////////
+//-----------------------------------------------------------
+// Section Block --------------------------------------------
+.background_image {
+	background-image: url(../img/fabio-alves.png);
+	background-repeat: no-repeat;
+}
+
+.header {
+	//background-color: rgba(0, 0, 0, 0.4);
+	//--
+	width: 100%;
+	height: 108px;
+	border-bottom: 1px solid rgba(46, 46, 46, 1);
+
+	&-wrapper {
+		//background-color: rgba(0, 0, 0, 0.4);
+		//--
+		width: 1290px;
+		height: 100%;
+		margin: 0 auto;
+		//--
+		position: relative;
+	}
+}
+//-----------------------------------------------------------
+// Block Elements -------------------------------------------
+.header {
+	&__logo {
+		position: absolute;
+		top: 35px;
+		//--
+		font-weight: 700;
+		font-size: 22px;
+	}
+	
+	&__home {
+		position: absolute;
+		top: 47px;
+		right: 522px;
+	}
+	
+	&__blog {
+		position: absolute;
+		top: 47px;
+		right: 450px;
+	}
+	
+	&__releases {
+		position: absolute;
+		top: 47px;
+		right: 345px;
+	}
+	
+	&__about {
+		position: absolute;
+		top: 47px;
+		right: 255px;
+	}
+	
+	&__contact {
+		position: absolute;
+		top: 47px;
+		right: 153px;
+	}
+
+	&__block {
+		position: absolute;
+		top: 36px;
+		right: -2px;
+		//--
+		border: 2px solid transparent;
+		-webkit-border-image: -webkit-linear-gradient(rgba(89, 243, 123, 0.3) , rgba(8, 216, 244, 0.3));
+		border-image-slice: 1;
+		width: 97px;
+		height: 33px;
+	}
+
+	&__en {
+		position: absolute;
+		top: 45px;
+		right: 36px;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 14px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	&__united-kingdom {
+		position: absolute;
+		top: 45px;
+		right: 63px;
+	}
+
+	&__arrow {
+		position: absolute;
+		top: 50px;
+		right: 12px;
+	}
+
+	&__image {
+		position: absolute;
+		bottom: -12px;
+		left: 125px;
+	}
+}
+//-----------------------------------------------------------
+/////////////////////////////////////////////////////////////
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+// SECTION WELCOME //////////////////////////////////////////
+//-----------------------------------------------------------
+// Section Block --------------------------------------------
+.welcome {
+	//background-color: rgba(0, 0, 0, 0.4);
+	//--
+	width: 100%;
+	height: 870px;
+	border-bottom: 1px solid rgba(46, 46, 46, 1);
+
+	&-wrapper {
+		//background-color: rgba(0, 0, 0, 0.4);
+		//--
+		width: 1290px;
+		height: 100%;
+		margin: 0 auto;
+		//--
+		position: relative;
+	}
+}
+//-----------------------------------------------------------
+// Block Elements -------------------------------------------
+.welcome {
+
+	&__image {
+		position: absolute;
+		bottom: -12px;
+		left: 622px;
+	}
+
+	&__title {
+		position: absolute;
+		top: 273px;
+		left: 0px;
+		font-size: 70px;
+		font-weight: 600;
+	}
+
+	&__text {
+		position: absolute;
+		top: 351px;
+		left: 0px;
+		font-size: 18px;
+	}
+
+	&__btn {
+		position: absolute;
+		top: 451px;
+		left: 0px;
+		border-bottom: 2px solid #5eab6f;
+	}
+
+	&__youtube {
+		position: absolute;
+		top: 283px;
+		right: 0px;
+		padding: 19px 58px 19px 73px;
+	}
+
+	&__soundcloud {
+		position: absolute;
+		top: 336px;
+		right: 0px;
+		padding: 19px 24px 19px 72px;
+	}
+
+	&__spotify {
+		position: absolute;
+		top: 389px;
+		right: 0px;
+		padding: 19px 66px 19px 72px;
+	}
+
+	&__santapng {
+		position: absolute;
+		top: 237px;
+		left: -33px;
+	}
+
+	&__youtubesvg {
+		position: absolute;
+		top: 294px;
+		right: 146px;
+	}
+
+	&__soundcloudsvg {
+		position: absolute;
+		top: 348px;
+		right: 147px;
+	}
+
+	&__spotifysvg {
+		position: absolute;
+		top: 400px;
+		right: 147px;
+	}
+
+	&__block {
+		position: absolute;
+		top: 648px;
+		left: 0px;
+		width: 100%;
+		border: 0.5px solid #4E4E4E;
+		height: 62px;
+		background-image: linear-gradient(89.93deg, rgba(89, 243, 123, 0.3) 0.43%, rgba(8, 216, 244, 0) 98.6%);
+	}
+
+	&__playsvg {
+		position: absolute;
+		bottom: 183px;
+		left: 30px;
+	}
+
+	&__soundsvg {
+		position: absolute;
+		bottom: 182px;
+		left: 62px;
+	}
+
+	&__arrowsvg {
+		position: absolute;
+		bottom: 106px;
+		left: 637px;
+	}
+
+	&__texthello {
+		position: absolute;
+		bottom: 179px;
+		left: 566px;
+		//--
+		color: #ffffff;
+	}
+}
+//-----------------------------------------------------------
+// SECTION SLIDER ///////////////////////////////////////////
+//-----------------------------------------------------------
+// Section Block --------------------------------------------
+.slider {
+	//background-color: rgba(0, 0, 0, 0.4);
+	//--
+	width: 100%;
+	height: 1121px;
+	//border-bottom: 1px solid rgba(46, 46, 46, 1);
+
+	&-wrapper {
+		//background-color: rgba(0, 0, 0, 0.4);
+		//--
+		width: 1290px;
+		height: 100%;
+		margin: 0 auto;
+		//--
+		position: relative;
+	}
+}
+//-----------------------------------------------------------
+// Block Elements -------------------------------------------
+.slider {
+	&__title {
+		position: absolute;
+		top: 143px;
+		left: 580px;
+		text-transform: none;
+	}
+
+	&__arrowleft {
+		position: absolute;
+		top: 407px;
+		left: 345px;
+	}
+
+	&__arrowright {
+		position: absolute;
+		top: 407px;
+		right: 344px;
+	}
+
+	&__Screenshot4 {
+		position: absolute;
+		top: 276px;
+		left: -278px;
+	}
+
+	&__Screenshot2 {
+		position: absolute;
+		top: 276px;
+		left: 13px;
+	}
+
+	&__Screenshot3 {
+		position: absolute;
+		top: 276px;
+		right: 11px;
+	}
+
+	&__Screenshot5 {
+		position: absolute;
+		top: 276px;
+		right: -281px;
+	}
+
+	&__Countdown {
+		position: absolute;
+		top: 549px;
+		left: -180px;
+		letter-spacing: 0;
+	}
+
+	&__Confusion {
+		position: absolute;
+		top: 549px;
+		left: 131px;
+		letter-spacing: 0;
+	}
+
+	&__Viimsi {
+		position: absolute;
+		top: 549px;
+		right: 145px;
+		letter-spacing: 0;
+	}
+
+	&__SweetStorm {
+		position: absolute;
+		top: 549px;
+		right: -172px;
+		letter-spacing: 0;
+	}
+
+	&__fon {
+		position: absolute;
+		top: 210px;
+		left: 418px;
+	}
+
+	&__Screenshot1 {
+		position: absolute;
+		top: 219px;
+		left: 425px;
+	}
+
+	&__hello {
+		position: absolute;
+		top: 623px;
+		left: 460px;
+		text-transform: none;
+		font-size: 22px;
+	}
+
+	&__oval {
+		position: absolute;
+		top: 621px;
+		left: 767px;
+	}
+
+	&__download {
+		position: absolute;
+		top: 626px;
+		left: 782px;
+	}
+
+	&__svg1 {
+		position: absolute;
+		top: 621px;
+		left: 659px;
+	}
+
+	&__svg2 {
+		position: absolute;
+		top: 621px;
+		left: 695px;
+	}
+
+	&__svg3 {
+		position: absolute;
+		top: 621px;
+		left: 731px;
+	}
+
+	&__count {
+		position: absolute;
+		top: 626px;
+		left: 801px;
+		font-size: 12px;
+	}
+
+	&__time {
+		position: absolute;
+		top: 679px;
+		left: 804px;
+		font-size: 12px;
+	}
+
+	&__pause {
+		position: absolute;
+		top: 675px;
+		left: 460px;
+	}
+
+	&__playgreen {
+		position: absolute;
+		top: 675px;
+		left: 482px;
+	}
+
+	&__sound {
+		position: absolute;
+		top: 673px;
+		left: 505px;
+	}
+
+	&__block {
+		position: absolute;
+		top: 703px;
+		left: 459px;
+		width: 371px;
+		height: 1px;
+		background-color: #262626;
+	}
+
+	&__blockgreen {
+		position: absolute;
+		top: 703px;
+		left: 459px;
+		width: 119px;
+		height: 1px;
+		background-color: #408d51;
+	}
+
+	&__effectsound {
+		position: absolute;
+		bottom: 0px;
+		right: -316px;
+	}
+}
+
+//-----------------------------------------------------------
+// SECTION BLOG /////////////////////////////////////////////
+//-----------------------------------------------------------
+// Section Block --------------------------------------------
+.blog {
+	//background-color: rgba(0, 0, 0, 0.4);
+	//--
+	width: 100%;
+	height: 1086px;
+	border-bottom: 1px solid rgba(46, 46, 46, 1);
+
+	&-wrapper {
+		//background-color: rgba(0, 0, 0, 0.4);
+		//--
+		width: 1290px;
+		height: 100%;
+		margin: 0 auto;
+		//--
+		position: relative;
+	}
+}
+//-----------------------------------------------------------
+// Block Elements -------------------------------------------
+.blog {
+	&__image {
+		position: absolute;
+		bottom: -12px;
+		left: 622px;
+	}
+
+	&__title {
+		position: absolute;
+		top: 153px;
+		left: 603px;
+		text-transform: none;
+	}
+
+	&__btn {
+		position: absolute;
+		top: 869px;
+		left: 556px;
+		border-bottom: 2px solid #5eab6f;
+	}
+
+	&__blockimg1 {
+		position: absolute;
+		top: 233px;
+		left: -5px;
+		width: 304px;
+		height: 301px;
+		background-color: #353535;
+	}
+
+	&__blockimg2 {
+		position: absolute;
+		top: 504px;
+		left: 326px;
+		width: 304px;
+		height: 301px;
+		background-color: #353535;
+	}
+
+	&__blockimg3 {
+		position: absolute;
+		top: 233px;
+		right: 328px;
+		width: 304px;
+		height: 301px;
+		background-color: #353535;
+	}
+
+	&__blockimg4 {
+		position: absolute;
+		top: 504px;
+		right: -4px;
+		width: 304px;
+		height: 301px;
+		background-color: #353535;
+	}
+
+	&__foto1 {
+		position: absolute;
+		top: 354px;
+		left: 116px;
+	}
+
+	&__foto2 {
+		position: absolute;
+		top: 624px;
+		left: 449px;
+	}
+
+	&__foto3 {
+		position: absolute;
+		top: 354px;
+		right: 450px;
+	}
+
+	&__foto4 {
+		position: absolute;
+		top: 624px;
+		right: 118px;
+	}
+
+	&__blockimgr1 {
+		position: absolute;
+		top: 533px;
+		left: -5px;
+		width: 302px;
+		height: 269px;
+		border: 1px solid #353535;
+	}
+
+	&__blockimgr2 {
+		position: absolute;
+		top: 233px;
+		left: 326px;
+		width: 302px;
+		height: 270px;
+		border: 1px solid #353535;
+	}
+
+	&__blockimgr3 {
+		position: absolute;
+		top: 533px;
+		right: 328px;
+		width: 302px;
+		height: 269px;
+		border: 1px solid #353535;
+	}
+
+	&__blockimgr4 {
+		position: absolute;
+		top: 233px;
+		right: -4px;
+		width: 302px;
+		height: 269px;
+		border: 1px solid #353535;
+	}
+
+	&__description1 {
+		position: absolute;
+		top: 567px;
+		left: 28px;
+	}
+
+	&__description2 {
+		position: absolute;
+		top: 267px;
+		left: 360px;
+	}
+
+	&__description3 {
+		position: absolute;
+		top: 567px;
+		right: 527px;
+	}
+
+	&__description4 {
+		position: absolute;
+		top: 267px;
+		right: 195px;
+	}
+
+	&__title1 {
+		position: absolute;
+		top: 594px;
+		left: 26px;
+		font-size: 22px;
+		font-weight: 700;
+		text-transform: none;
+		line-height: 1.1;
+	}
+
+	&__title2 {
+		position: absolute;
+		top: 293px;
+		left: 358px;
+		font-size: 22px;
+		font-weight: 700;
+		text-transform: none;
+		line-height: 1.1;
+	}
+
+	&__title3 {
+		position: absolute;
+		top: 593px;
+		right: 348px;
+		font-size: 22px;
+		font-weight: 700;
+		text-transform: none;
+		line-height: 1.1;
+	}
+
+	&__title4 {
+		position: absolute;
+		top: 293px;
+		right: 16px;
+		font-size: 22px;
+		font-weight: 700;
+		text-transform: none;
+		line-height: 1.1;
+	}
+
+	&__text1 {
+		position: absolute;
+		top: 653px;
+		left: 27px;
+		letter-spacing: normal;
+	}
+
+	&__text2 {
+		position: absolute;
+		top: 353px;
+		left: 358px;
+		letter-spacing: normal;
+	}
+
+	&__text3 {
+		position: absolute;
+		top: 653px;
+		right: 348px;
+		letter-spacing: normal;
+	}
+
+	&__text4 {
+		position: absolute;
+		top: 353px;
+		right: 16px;
+		letter-spacing: normal;
+	}
+
+	&__count1 {
+		position: absolute;
+		top: 755px;
+		left: 61px;
+		letter-spacing: normal;
+	}
+
+	&__count2 {
+		position: absolute;
+		top: 455px;
+		left: 392px;
+		letter-spacing: normal;
+	}
+
+	&__count3 {
+		position: absolute;
+		top: 755px;
+		right: 533px;
+		letter-spacing: normal;
+	}
+
+	&__count4 {
+		position: absolute;
+		top: 455px;
+		right: 201px;
+		letter-spacing: normal;
+	}
+
+	&__views1 {
+		position: absolute;
+		top: 760px;
+	left: 27px;
+	}
+
+	&__views2 {
+		position: absolute;
+		top: 460px;
+		left: 359px;
+	}
+
+	&__views3 {
+		position: absolute;
+		top: 760px;
+		right: 578px;
+	}
+
+	&__views4 {
+		position: absolute;
+		top: 460px;
+		right: 246px;
+	}
+
+	&__new {
+		position: absolute;
+		top: 234px;
+		left: 572px;
+		font-size: 12px;
+		font-weight: 600;
+		color: #1C1C1C;
+		padding: 6.5px 15px;
+		background: linear-gradient(180deg, #59F37B 0%, #08D8F4 100%);
+	}
+}
+//-----------------------------------------------------------
+// SECTION FORM /////////////////////////////////////////////
+//-----------------------------------------------------------
+// Section Block --------------------------------------------
+.form {
+	//background-color: rgba(0, 0, 0, 0.4);
+	background-image: url(../img/bg-form.png);
+	background-position: 0 70px;
+	//--
+	width: 100%;
+	height: 751px;
+	border-bottom: 2px solid rgba(46, 46, 46, 1);
+
+	&-wrapper {
+		//background-color: rgba(0, 0, 0, 0.4);
+		//--
+		width: 1290px;
+		height: 100%;
+		margin: 0 auto;
+		//--
+		position: relative;
+	}
+}
+//-----------------------------------------------------------
+// Block Elements -------------------------------------------
+.form {
+	&__title {
+		position: absolute;
+		top: 157px;
+		left: 534px;
+		text-transform: none;
+		letter-spacing: 0.9px;
+	}
+
+	&__text {
+		position: absolute;
+		top: 193px;
+		left: 484px;
+		letter-spacing: 0px;
+		text-align: center;
+	}
+
+	&__description1 {
+		position: absolute;
+		top: 289px;
+		left: 266px;
+		text-transform: none;
+		font-size: 13px;
+	}
+
+	&__description2 {
+		position: absolute;
+		top: 289px;
+		left: 700px;
+		text-transform: none;
+		font-size: 13px;
+	}
+
+	&__description3 {
+		position: absolute;
+		top: 386px;
+		left: 266px;
+		text-transform: none;
+		font-size: 13px;
+	}
+
+	&__text1 {
+		position: absolute;
+		top: 309px;
+		left: 265px;
+		letter-spacing: 0px;
+	}
+
+	&__text2 {
+		position: absolute;
+		top: 309px;
+		left: 700px;
+		letter-spacing: 0px;
+	}
+
+	&__text3 {
+		position: absolute;
+		top: 406px;
+		left: 265px;
+		letter-spacing: 0px;
+	}
+
+	&__block1 {
+		position: absolute;
+		top: 342px;
+		left: 265px;
+		width: 324px;
+		height: 1px;
+		background-color: #323232;
+	}
+
+	&__block2 {
+		position: absolute;
+		top: 342px;
+		left: 700px;
+		width: 324px;
+		height: 1px;
+		background-color: #323232;
+	}
+
+	&__block3 {
+		position: absolute;
+		top: 439px;
+		left: 265px;
+		width: 759px;
+		height: 1px;
+		background-color: #323232;
+	}
+
+	&__btn {
+		position: absolute;
+		top: 480px;
+		left: 555px;
+		padding: 27px 67px 26px 68px;
+		border-bottom: 2px solid #5eab6f;
+	}
+
+	&__block4 {
+		position: absolute;
+		bottom: 0px;
+		right: -315px;
+		width: 74px;
+		height: 74px;
+		background-color: #1C1C1C;
+		border: 1px solid #A9A9A9;
+	}
+
+	&__captcha {
+		position: absolute;
+		bottom: 10px;
+		right: -300px;
+	}
+}
+//-----------------------------------------------------------
+// SECTION FOOTER ///////////////////////////////////////////
+//-----------------------------------------------------------
+// Section Block --------------------------------------------
+.footer {
+	//background-color: rgba(0, 0, 0, 0.4);
+	//--
+	width: 100%;
+	height: 229px;
+	//border-bottom: 2px solid rgba(46, 46, 46, 1);
+
+	&-wrapper {
+		//background-color: rgba(0, 0, 0, 0.4);
+		//--
+		width: 1290px;
+		height: 100%;
+		margin: 0 auto;
+		//--
+		position: relative;
+	}
+}
+//-----------------------------------------------------------
+// Block Elements -------------------------------------------
+.footer {
+	&__bggreen {
+		position: absolute;
+		top: 44px;
+		left: 543px;
+	}
+
+	&__title {
+		position: absolute;
+		top: 67px;
+		left: 611px;
+		font-size: 22px;
+		font-weight: 700;
+	}
+
+	&__text {
+		position: absolute;
+		top: 198px;
+		left: 598px;
+		font-size: 11px;
+		text-transform: uppercase;
+		letter-spacing: 0;
+	}
+
+	&__live {
+		position: absolute;
+		top: 120px;
+		left: 638px;
+		font-size: 10px;
+		font-weight: 500;
+		letter-spacing: 0;
+	}
+
+	&__block {
+		position: absolute;
+		top: 182px;
+		left: -315px;
+		width: 1920px;
+		height: 1px;
+		background-color: #2E2E2E;
+	}
+
+	&__footerarrow {
+		position: absolute;
+		top: 90px;
+		right: 18px;
+	}
+
+	&__circle {
+		position: absolute;
+		top: 122px;
+		left: 628px;
+	}
+}
+//-----------------------------------------------------------
+/////////////////////////////////////////////////////////////
+//-----------------------------------------------------------

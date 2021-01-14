@@ -1,34 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Home</title>
+		<meta name="theme-color" content="#fff">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+		<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+		<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+		<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+		<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+		<link rel="stylesheet" href="styles/main.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<div class="background_image">
+				<div class="header">
+					<div class="header-wrapper">
+						<p class="title header__logo">Stick <br> Heinz</p>
+						<a class="link header__home" href="#">home</a>
+						<a class="link header__blog link-active" href="#">blog</a>
+						<a class="link header__releases" href="#">releases</a>
+						<a class="link header__about" href="#">about</a>
+						<a class="link header__contact" href="#">contact</a>
+						<div class="block header__block"></div>
+						<p class="text header__en">en</p>
+						<img class="header__united-kingdom" src="../img/header-united_kingdom.svg" alt="united-kingdom">
+						<img class="header__arrow" src="../img/header-arrow.svg" alt="arrow">
+						<img class="header__image" src="../img/image.svg" alt="image">
+					</div>
+				</div>
+				<div class="welcome">
+					<div class="welcome-wrapper">
+						<img class="welcome__image" src="../img/image.svg" alt="image">
+						<p class="title welcome__title">Welcome!</p>
+						<p class="text welcome__text">Hi there! This is Stick Heinz homepage.<br>More than 10 years i making first class hip-hop beats.</p>
+						<a class="btn welcome__btn" href="#">also make to order</a>
+						<a class="btn welcome__youtube" href="#">youtube</a>
+						<a class="btn welcome__soundcloud" href="#">soundcloud</a>
+						<a class="btn welcome__spotify" href="#">spotify</a>
+						<img class="welcome__santapng" src="../img/welcome-santa.png" alt="santa">
+						<img class="welcome__youtubesvg" src="../img/welcome-youtube.svg" alt="youtube">
+						<img class="welcome__soundcloudsvg" src="../img/welcome-soundcloud.svg" alt="soundcloud">
+						<img class="welcome__spotifysvg" src="../img/welcome-spotify.svg" alt="spotify">
+						<div class="block welcome__block"></div>
+						<img class="welcome__playsvg" src="../img/welcome-play.svg" alt="play">
+						<img class="welcome__soundsvg" src="../img/welcome-sound.svg" alt="sound">
+						<img class="welcome__arrowsvg" src="../img/welcome-arrow.svg" alt="arrow">
+						<p class="text welcome__texthello">Last releases “Hello”</p>
+					</div>
+				</div>
+			</div>
+			<div class="slider">
+				<div class="slider-wrapper">
+					<p class="title slider__title">My releases</p>
+					<img class="slider__arrowleft" src="../img/arrow_left.svg" alt="arrow_left">
+					<img class="slider__arrowright" src="../img/arrow_right.svg" alt="arrow_right">
+					<img class="slider__Screenshot4" src="../img/Screenshot_4.png" alt="Screenshot_4">
+					<img class="slider__Screenshot2" src="../img/Screenshot_2.png" alt="Screenshot_2">
+					<img class="slider__Screenshot3" src="../img/Screenshot_3.png" alt="Screenshot_3">
+					<img class="slider__Screenshot5" src="../img/Screenshot_5.png" alt="Screenshot_5">
+					<p class="text slider__Countdown">Countdown</p>
+					<p class="text slider__Confusion">Confusion</p>
+					<p class="text slider__Viimsi">Viimsi</p>
+					<p class="text slider__SweetStorm">Sweet Storm</p>
+					<img class="slider__fon" src="../img/fon.png" alt="fon">
+					<img class="slider__Screenshot1" src="../img/Screenshot_1.png" alt="Screenshot_1">
+					<p class="title slider__hello">Hello</p>
+					<img class="slider__oval" src="../img/oval.svg" alt="oval">
+					<img class="slider__download" src="../img/download.svg" alt="download">
+					<img class="slider__svg1" src="../img/svg1.svg" alt="svg1">
+					<img class="slider__svg2" src="../img/svg2.svg" alt="svg2">
+					<img class="slider__svg3" src="../img/svg3.svg" alt="svg3">
+					<p class="text slider__count">14</p>
+					<p class="text slider__time">2:45</p>
+					<img class="slider__pause" src="../img/pause.svg" alt="pause">
+					<img class="slider__playgreen" src="../img/play_green.svg" alt="play_green">
+					<img class="slider__sound" src="../img/sound.svg" alt="sound">
+					<div class="block slider__block"></div>
+					<div class="block slider__blockgreen"></div>
+					<img class="slider__effectsound" src="../img/effect_sound.png" alt="effect_sound">
+				</div>
+			</div>
+			<div class="blog">
+				<div class="blog-wrapper">
+					<img class="blog__image" src="../img/image.svg" alt="image">
+					<p class="title blog__title">My blog</p>
+					<a class="btn blog__btn" href="#">MORE</a>
+					<div class="block blog__blockimg1"></div>
+					<div class="block blog__blockimg2"></div>
+					<div class="block blog__blockimg3"></div>
+					<div class="block blog__blockimg4"></div>
+					<img class="blog__foto1" src="../img/foto.svg" alt="foto1">
+					<img class="blog__foto2" src="../img/foto.svg" alt="foto2">
+					<img class="blog__foto3" src="../img/foto.svg" alt="foto3">
+					<img class="blog__foto4" src="../img/foto.svg" alt="foto4">
+					<div class="block blog__blockimgr1"></div>
+					<div class="block blog__blockimgr2"></div>
+					<div class="block blog__blockimgr3"></div>
+					<div class="block blog__blockimgr4"></div>
+					<p class="description blog__description1">04 Jun 2020</p>
+					<p class="description blog__description2">04 Jun 2020</p>
+					<p class="description blog__description3">04 Jun 2020</p>
+					<p class="description blog__description4">04 Jun 2020</p>
+					<p class="title blog__title1">Where To Look For<br>Cheap Brochure Printing</p>
+					<p class="title blog__title2">Where To Look For<br>Cheap Brochure Printing</p>
+					<p class="title blog__title3">Where To Look For<br>Cheap Brochure Printing</p>
+					<p class="title blog__title4">Where To Look For<br>Cheap Brochure Printing</p>
+					<p class="text blog__text1">There is a moment in the life of any<br>aspiring astronomer that it is</p>
+					<p class="text blog__text2">There is a moment in the life of any<br>aspiring astronomer that it is</p>
+					<p class="text blog__text3">There is a moment in the life of any<br>aspiring astronomer that it is</p>
+					<p class="text blog__text4">There is a moment in the life of any<br>aspiring astronomer that it is</p>
+					<p class="text blog__count1">7.4K</p>
+					<p class="text blog__count2">7.4K</p>
+					<p class="text blog__count3">7.4K</p>
+					<p class="text blog__count4">7.4K</p>
+					<img class="blog__views1" src="../img/views.svg" alt="views1">
+					<img class="blog__views2" src="../img/views.svg" alt="views2">
+					<img class="blog__views3" src="../img/views.svg" alt="views3">
+					<img class="blog__views4" src="../img/views.svg" alt="views4">
+					<p class="title blog__new">new</p>
+				</div>
+			</div>
+			<div class="form">
+				<div class="form-wrapper">
+					<p class="title form__title">Also make to order</p>
+					<p class="text form__text">When you enter into any new area of science<br>you almost always find yourself.</p>
+					<p class="description form__description1">Your Name</p>
+					<p class="description form__description2">E-mail</p>
+					<p class="description form__description3">Mesage</p>
+					<p class="text form__text1">Enter your name</p>
+					<p class="text form__text2">Enter your e-mail address</p>
+					<p class="text form__text3">Your mesage here ...</p>
+					<div class="block form__block1"></div>
+					<div class="block form__block2"></div>
+					<div class="block form__block3"></div>
+					<a class="btn form__btn" href="#">SEND</a>
+					<div class="block form__block4"></div>
+					<img class="form__captcha" src="../img/captcha.png" alt="captcha">
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-wrapper">
+					<img class="footer__bggreen" src="../img/bg-green.png" alt="bg-green">
+					<p class="title footer__title">Stick<br>Heinz</p>
+					<p class="text footer__text">2020. Copyright</p>
+					<p class="title footer__live">live</p>
+					<div class="block footer__block"></div>
+					<img class="footer__footerarrow" src="../img/footer-arrow.svg" alt="footer-arrow">
+					<img class="footer__circle" src="../img/circle.svg" alt="circle">
+				</div>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+		<script src="js/vendor.js"></script>
+	</body>
 </html>
