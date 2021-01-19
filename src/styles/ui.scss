@@ -1,0 +1,135 @@
+//===========================================================
+// * {
+// 	margin: 0;
+// 	padding: 0;
+// 	border: none;
+// 	background: none;
+// 	outline: none;
+// }
+
+// body {
+// 	background-color: #1c1c1c;
+// 	font-family: 'IBM Plex Sans', sans-serif;
+// 	color: #A9A9A9;
+// }
+//===========================================================
+//-----------------------------------------------------------
+body {
+	//background-color: #555555;
+}
+//-----------------------------------------------------------
+// Делает рамку
+.box1 {
+	//border: 1px solid #26e1c7;
+}
+// Обычный с обрезкой
+.box2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+}
+// С градиентным бордюром
+.box3 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 97px;
+	height: 33px;
+
+	border: 2px solid transparent;
+	-webkit-border-image: -webkit-linear-gradient(rgba(89, 243, 123, 0.3), rgba(8, 216, 244, 0.3));
+	border-image-slice: 1;
+}
+//-----------------------------------------------------------
+// Ссылка с градиентом
+.txt1 {
+	position: absolute;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 0.9;
+	letter-spacing: 0.03em;
+	color: #A9A9A9;
+	cursor: pointer;
+
+	&:hover {
+		background: linear-gradient(180deg, #59F37B 0%, #08D8F4 100%);
+		-webkit-background-clip: text; //Обрезаем фон по тексту
+		-webkit-text-fill-color: transparent; //Прозрачный текст
+	}
+
+	&-active {
+		background: linear-gradient(180deg, #59F37B 0%, #08D8F4 100%);
+		-webkit-background-clip: text; //Обрезаем фон по тексту
+		-webkit-text-fill-color: transparent; //Прозрачный текст
+	}
+}
+// Обычный текст
+.txt2 {
+	position: absolute;
+	line-height: 0.9;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 700;
+}
+// Обычный текст
+.txt3 {
+	position: absolute;
+	font-weight: 500;
+	line-height: 0.9;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 14px;
+}
+// Обычный текст
+.txt4 {
+	position: absolute;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 0.03em;
+}
+
+.txt5 {
+	position: absolute;
+	font-weight: 500;
+	font-size: 22px;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.txt6 {
+	position: absolute;
+	font-weight: 500;
+	font-size: 13px;
+	letter-spacing: 0.03em;
+	color: #4D4C4C;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&:hover {
+		color: #A9A9A9;
+	}
+
+	&-active {
+		color: #A9A9A9;
+	}
+}
+//-----------------------------------------------------------
+.img1 {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+}
+
+.img2 {
+	position: absolute;
+	background-repeat: no-repeat;
+}
+//-----------------------------------------------------------
+//===========================================================
+

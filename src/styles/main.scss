@@ -6,8 +6,6 @@
 @import "base/general";
 @import "../blocks/modules";
 //-----------------------------------------------------------
-/////////////////////////////////////////////////////////////
-//-----------------------------------------------------------
 * {
 	margin: 0;
 	padding: 0;
@@ -16,13 +14,17 @@
 	outline: none;
 }
 
-body
-{
+body {
 	background-color: #1c1c1c;
-	//background-color: #777777;
-	overflow-x: hidden; // Убирает горизонтальную прокрутку
-	position: relative;
+	font-family: 'IBM Plex Sans', sans-serif;
+	color: #A9A9A9;
+	letter-spacing: 0.03em;
+	overflow-x: hidden;
 }
+//-----------------------------------------------------------
+@import "ui.scss";
+@import "style.scss";
+@import "control.scss";
 //-----------------------------------------------------------
 /////////////////////////////////////////////////////////////
 //-----------------------------------------------------------
@@ -84,7 +86,6 @@ body
 // Title ----------------------------------------------------
 // <p class="title test__title">Title</p>
 .title {
-	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
 	font-style: normal; // начертание текста
 	font-weight: 500; // толщина букв текста
 	font-size: 24px; // размер текста
@@ -98,7 +99,6 @@ body
 // Subtitle -----------------------------------------------------
 // <p class="subtitle test__subtitle">subtitle</p>
 .subtitle {
-	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
 	font-style: normal; // начертание текста
 	font-weight: 700; // толщина букв текста
 	font-size: 22px; // размер текста
@@ -113,13 +113,11 @@ body
 // Text -----------------------------------------------------
 // <p class="text test__text">Text</p>
 .text {
-	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
 	font-style: normal; // начертание текста
 	font-weight: 400; // толщина букв текста
 	font-size: 16px; // размер текста
 	line-height: 1.4; // межстрочное расстояние
 	letter-spacing: 0px; //интервал между символами
-	color: #A9A9A9; // цвет текста
 	max-width: 470px; // ширина текстового поля
 	position: absolute;
 }
@@ -127,7 +125,6 @@ body
 // Description ----------------------------------------------
 // <p class="description test__description">Description</p>
 .description {
-	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
 	font-style: normal; // начертание текста
 	font-weight: 400; // толщина букв текста
 	font-size: 12px; // размер текста
@@ -144,7 +141,6 @@ body
 // <a class="link test__link" href="#">link</a>
 .link {
 	// text
-	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
 	font-style: normal; // начертание текста
 	font-weight: 500; // толщина букв текста
 	font-size: 14px; // размер текста
@@ -205,12 +201,10 @@ body
 // <a class="btn test__btn" href="#">btn</a>
 .btn {
 	// text
-	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
 	font-style: normal; // начертание текста
 	font-weight: 500; // толщина букв текста
 	font-size: 16px; // размер текста
 	line-height: 0.9; // межстрочное расстояние
-	letter-spacing: 0.5px; //интервал между символами
 	text-transform: uppercase; // буквы верхнего регистра
 	color: #A9A9A9; // цвет текста
 	position: absolute;
@@ -269,13 +263,10 @@ body
 	height: 45px;
 	border-bottom: 1px solid #323232;
 	// text
-	font-family: 'IBM Plex Sans', sans-serif; // шрифт текста
 	font-style: normal; // начертание текста
 	font-weight: 400; // толщина букв текста
 	font-size: 14px; // размер текста
 	line-height: 1.4; // межстрочное расстояние
-	letter-spacing: 0px; //интервал между символами
-	color: #A9A9A9; // цвет текста
 	//--
 	&:focus {
 		border-bottom: 1px solid #26e1c7;
